@@ -16,6 +16,7 @@ to undo it:
 
 
 
+
 kubectl create -f app-deployment.yaml 
 kubectl create -f app-service.yaml 
 
