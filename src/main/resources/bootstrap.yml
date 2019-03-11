@@ -1,6 +1,15 @@
 server:
   port: 8888
 
+encrypt:
+  enabled: true
+  keyStore:
+    location: file:${KEYSTORE_LOCATION:/home/secrets/config-server}
+    password: ${KEYSTORE_PASSWORD:password}
+    secret: ${KEY_PASSPHRASE:password}
+    alias: ${KEY_ALIAS:config-server}
+    type: jks
+
 spring:
   cloud:
     config:
